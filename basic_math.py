@@ -7,6 +7,8 @@
 """
 
 
+import numpy as np
+
 def get_greatest(number_list):
     """
     주어진 리스트에서 가장 큰 숫자를 반환함
@@ -64,9 +66,7 @@ def get_mean(number_list):
             >>> bm.get_mean(number_list)
             47
     """
-    return number_list.mean()
-
-import numpy as np
+    return np.mean(number_list)
 
 def get_median(number_list):
     """
