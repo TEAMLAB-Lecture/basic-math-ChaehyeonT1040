@@ -90,10 +90,11 @@ def get_median(number_list):
     temp = 0
     leng = 0
     number_list.sort()
-    leng = int(len(number_list)//2)
-    if leng%2 != 0:
-        return number_list[leng]
+    print(number_list)
+    leng = len(number_list)/2
+    if (leng*2)%2 != 0:
+        return number_list[int(leng)]
     else: 
-        temp += number_list[leng]
-        temp += number_list[leng-1]
+        temp += number_list[int(leng)-1]
+        temp += number_list[int(leng)]
         return temp/2
