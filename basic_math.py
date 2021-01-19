@@ -66,6 +66,7 @@ def get_mean(number_list):
     """
     return number_list.mean()
 
+import numpy as np
 
 def get_median(number_list):
     """
@@ -87,4 +88,4 @@ def get_median(number_list):
             >>> bm.get_median(number_list2)
             35.5
     """
-    return number_list.median()
+    return np.median(number_list)
